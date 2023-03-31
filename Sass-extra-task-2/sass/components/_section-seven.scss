@@ -1,0 +1,155 @@
+section#seven {
+    margin-bottom: 120px;
+    .plan-center {
+        display: flex;
+        justify-content: center;
+
+        .plan {
+            text-align: center;
+
+            h1 {
+                font-family: "Poppins", sans-serif;
+                color: #222222;
+                font-size: 36px;
+                margin: 0;
+                font-weight: 600;
+            }
+
+            p {
+                color: #777777;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                margin: 0;
+            }
+        }
+    }
+
+    .top-economy {
+        margin-top: 82px;
+
+        .top-part {
+            text-align: center;
+
+            h1 {
+                font-size: 36px;
+                font-weight: 300;
+                margin: 0;
+                width: 140px;
+                height: 140px;
+                border-radius: 100%;
+                border: 30px solid rgba(132, 144, 255, .1);
+                background-color: rgba(255, 255, 255, .1);
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            h4 {
+                font-size: 18px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+            }
+
+            p {
+                color: #777;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+
+        .package-list {
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+
+                li {
+                    color: #777;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 14px;
+                    font-weight: 300;
+                    border: 1px solid #eee;
+                    height: 53px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-left: 0;
+                    border-right: 0;
+                }
+            }
+        }
+
+
+        .bottom-part {
+            position: relative;
+
+            h1 {
+                font-size: 36px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                transition: all .4s;
+                color: #222222;
+            }
+
+            a {
+                position: absolute;
+                background-color: #fff;
+                width: 100%;
+                text-decoration-line: none;
+                color: black;
+                font-weight: 600;
+                padding: 12px;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: all .4s;
+                font-family: "Poppins", sans-serif;
+            }
+        }
+
+        .economy {
+            background-color: #f9f9ff;
+            height: 561px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .scale {
+            transition: all .4s;
+            &:hover {
+                transform: scale(1.1);
+                z-index: 2;
+            }
+            &:hover .economy{
+                background: map-get($colors, "button-background-color")
+            }
+
+            &:hover li {
+                color: #fff;
+            }
+
+            &:hover p {
+                color: #fff;
+            }
+
+            &:hover h4 {
+                color: #fff;
+            }
+
+            &:hover h1 {
+                color: #fff;
+            }
+
+            &:hover .euro {
+                opacity: 0;
+            }
+
+            &:hover .bottom-part a {
+                opacity: 1;
+
+            }
+        }
+    }
+}

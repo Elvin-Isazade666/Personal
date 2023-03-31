@@ -1,0 +1,25 @@
+section#nine{
+    background: map-get($colors,"button-background-color");
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main-premium{
+        justify-content: center;
+        align-items: baseline;
+        height: 140px;
+        margin-top: 63px;
+        .premium{
+            margin: 0 38px;
+            height: 70px;
+            img{
+                width: 100%;
+                opacity: 0.5;
+                transition: all .4s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+footer{
+    p{
+        color: #777;
+        font-size: 18px;
+        padding: 27px;
+    }
+    a{
+        color: #20c997;
+        text-decoration: none;
+        transition: all 0.5s;
+        &:hover{
+            color: #158765;
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

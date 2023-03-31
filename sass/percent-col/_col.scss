@@ -1,0 +1,63 @@
+$cols: 12;
+
+.container{
+    width: 77%;
+    margin: 0 auto;
+}
+.container-fluid{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@include xs{
+    @for $i from 1 to $cols + 1 {
+        .col-xs-#{$i}{
+            flex-grow: 0;
+            width: $i * 100% /12;
+        }
+    }
+}
+@include sm{
+    @for $i from 1 to $cols + 1 {
+        .col-sm-#{$i}{
+            flex-grow: 0;
+            width: $i * 100% /12;
+        }
+    }
+}
+@include md{
+    @for $i from 1 to $cols + 1 {
+        .col-md-#{$i}{
+            flex-grow: 0;
+            width: $i * 100% /12;
+        }
+    }
+}
+@include lg{
+    @for $i from 1 to $cols + 1 {
+        .col-lg-#{$i}{
+            flex-grow: 0;
+            width: $i * 100% /12;
+        }
+    }
+}
+@include xl{
+    @for $i from 1 to $cols + 1 {
+        .col-xl-#{$i}{
+            flex-grow: 0;
+            width: $i * 100% /12;
+        }
+    }
+}
+@include xxl{
+    @for $i from 1 to $cols + 1 {
+        .col-xxl-#{$i}{
+            flex-grow: 0;
+            width: $i * 100% /12;
+        }
+    }
+}
